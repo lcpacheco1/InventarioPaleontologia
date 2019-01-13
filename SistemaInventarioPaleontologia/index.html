@@ -1,22 +1,101 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/estilos.css">
-  <title>Responsive design</title>
+  <title>Sistema de Paleontología</title>
 </head>
+
 <body>
+  <div class="principal">
+    <div class="container">
+      <div class="login caja-login">
+        <div class="login-header">
+          Login
+          <a class="btnCerrar icon-close" href="index.html"></a>
+        </div>
+        <div class="login-body">
+          <form>
+            <div class="form-group">
+              <label for="label_email">Email address</label>
+              <input class="form-control" id="txtEmail" type="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="label_contraseña">Password</label>
+              <input class="form-control" id="txtContraseña" type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Login</button>
+          </form>
+          <div class="text-center acceso">
+            <a class="small btnRegistrar" href="#home">Registrarse ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="principal2">
+    <div class="container">
+      <div class="registro caja-registro">
+        <div class="registro-header">Registrar una Cuenta</div>
+        <div class="registro-body">
+          <form>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <label for="exampleInputName">Nombres</label>
+                  <input class="form-control" id="txtNombres" type="text" placeholder="Ingrese sus nombres" required="">
+                </div>
+                <div class="col-md-6">
+                  <label for="exampleInputLastName">Apellidos</label>
+                  <input class="form-control" id="txtApellidos" type="text" placeholder="Ingrese sus apellidos"
+                    required="">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Dirección e-mail</label>
+              <input class="form-control" id="txtEmail" type="email" placeholder="Ingresar email" required="">
+            </div>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input class="form-control" id="txtCoPassword" type="password" placeholder="Contraseña" required="">
+                </div>
+                <div class="col-md-6">
+                  <label for="exampleConfirmPassword">Confirmar contraseña</label>
+                  <input class="form-control" id="txtCoPassword" type="password" placeholder="Confirmar contraseña"
+                    required="">
+                </div>
+              </div>
+            </div>
+            <input type="submit" name="" class="btn btn-primary btn-block" value="Registrar">
+          </form>
+          <div class="text-center acceso">
+            <a class="small btnVlogueo" href="#home">Página de Logueo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo-2.png" alt="Logo sitio web"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><img src="images/logo-3.png" alt="Logo sitio web"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,10 +104,7 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#trabajo">Trabajo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#clientes">Clientes</a>
+              <a class="nav-link" href="#fosil">Fósiles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#equipos">Nuestro equipo</a>
@@ -36,6 +112,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#contactos">Contáctanos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <div class="seccion-logueo">
+                <a class="btnLogin" href="#home">LogIn</a>
+              </div>
           </ul>
         </div>
       </div>
@@ -56,7 +138,9 @@
             </div>
             <p>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid ea voluptates animi amet eius quos recusandae dolore sint.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque
+              officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid
+              ea voluptates animi amet eius quos recusandae dolore sint.
             </p><br>
           </div>
           <a href="#" class="btn btn-celeste">Empieza</a>
@@ -76,7 +160,9 @@
             </div>
             <p>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid ea voluptates animi amet eius quos recusandae dolore sint.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque
+              officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid
+              ea voluptates animi amet eius quos recusandae dolore sint.
             </p><br>
           </div>
           <a href="#" class="btn btn-celeste">Empieza</a>
@@ -96,7 +182,9 @@
             </div>
             <p>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid ea voluptates animi amet eius quos recusandae dolore sint.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nostrum fugit perferendis neque
+              officiis labore harum, eveniet modi iure ut qui illum, excepturi numquam totam amet id incidunt. Aliquid
+              ea voluptates animi amet eius quos recusandae dolore sint.
             </p><br>
           </div>
           <a href="#" class="btn btn-celeste">Empieza</a>
@@ -106,7 +194,7 @@
     </div>
   </div>
   <section class="intro-area" id="intro-area">
-    <div class="container">
+    <div class="container" id="fosil">
       <div class="row">
         <div class="col-md-12 text-center">
           <h2>TRABAJA CON UNA SONRISA</h2>
@@ -121,27 +209,33 @@
           <div class="intro-block py-5 px-4 bg-light">
             <i class="fas fa-paint-brush fa-2x rounded-circle p-3 mb-3 bg-celeste text-white"></i>
             <h3>DISEÑO UNICO</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis possimus sapiente? Ipsa, hic dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus
+              exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis
+              possimus sapiente? Ipsa, hic dignissimos?</p>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="intro-block py-5 px-4 bg-light">
             <i class="fab fa-angellist fa-2x rounded-circle p-3 mb-3 bg-celeste text-white"></i>
             <h3>IMAGEN CORPORATIVA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis possimus sapiente? Ipsa, hic dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus
+              exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis
+              possimus sapiente? Ipsa, hic dignissimos?</p>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="intro-block py-5 px-4 bg-light">
             <i class="fab fa-angellist fa-2x rounded-circle p-3 mb-3 bg-celeste text-white"></i>
             <h3>IMAGEN CORPORATIVA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis possimus sapiente? Ipsa, hic dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati rerum delectus
+              exercitationem distinctio, aperiam non illum velit, error, provident eius voluptate ipsa animi corporis
+              possimus sapiente? Ipsa, hic dignissimos?</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="feature-area" id="trabajo">
+  <!-- <section class="feature-area" id="trabajo">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -190,8 +284,8 @@
         
       </div>
     </div>
-  </section>
-  <section class="more-feature-area" id="servicios">
+  </section> -->
+  <!-- <section class="more-feature-area" id="servicios">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -239,7 +333,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="testimonials" id="equipos">
     <div class="container">
       <div class="row">
@@ -265,7 +359,9 @@
                   <div class="text-white mt-4">
                     <h2>Daniel Grover</h2>
                     <h4>Sr Ingeniero</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate iure totam ab animi, dolores deleniti sunt, aliquid fugit, tenetur nihil officia aliquam a placeat est. Fugiat debitis iure quo eos sint eum, corporis amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptate iure totam ab
+                      animi, dolores deleniti sunt, aliquid fugit, tenetur nihil officia aliquam a placeat est. Fugiat
+                      debitis iure quo eos sint eum, corporis amet.</p>
                   </div>
                 </div>
               </div>
@@ -288,7 +384,8 @@
           <div class="titulo text-center">
             <h2>DESCARGAR</h2>
             <div class="sub-texto text-plomo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laboriosam recusandae numquam iure soluta ad officia ullam dolorem commodi perspiciatis.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laboriosam recusandae numquam iure
+              soluta ad officia ullam dolorem commodi perspiciatis.
             </div>
           </div>
         </div>
@@ -339,13 +436,14 @@
             </div>
           </form>
         </div>
-        
+
       </div>
     </div>
   </section>
   <section class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6693.827074478832!2d-79.20107380409588!3d-3.9847227066384403!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1545266713615" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6693.827074478832!2d-79.20107380409588!3d-3.9847227066384403!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1545266713615"
+      width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   </section>
   <footer class="footer bg-celeste">
     <div class="container">
@@ -377,15 +475,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
