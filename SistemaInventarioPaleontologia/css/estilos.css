@@ -9,6 +9,15 @@
   background-color: #FFA500;
   border-color: #FFA500;
 }
+
+.principal{
+  display: none;
+}
+
+.principal2{
+  display: none;
+}
+
 .btn-naranja:hover {
   color: #fff;
   background-color: #E76E22;
