@@ -1,3 +1,7 @@
+<?php 
+	include("dll/database.php");
+ ?>
+<!DOCTYPE html>
 <!doctype html>
 <html lang="es">
 
@@ -16,83 +20,97 @@
 </head>
 
 <body>
-  <div class="principal">
-    <div class="container">
-      <div class="login caja-login">
-        <div class="login-header">
-          Login
-          <a class="btnCerrar icon-close" href="index.html">X</a>
-        </div>
-        <div class="login-body">
-          <form>
-            <div class="form-group">
-              <label for="label_email">Email address</label>
-              <input class="form-control" id="txtEmail" type="email" placeholder="Enter email" required>
-            </div>
-            <div class="form-group">
-              <label for="label_contraseña">Password</label>
-              <input class="form-control" id="txtContraseña" type="password" placeholder="Password" required>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-              </div>
-            </div>
-            <button class="btn btn-dark btn-block" type="submit">Login</button>
-          </form>
-          <div class="text-center acceso">
-            <a class="small btnRegistrar" href="#home">Registrarse ahora</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="principal2">
-    <div class="container">
-      <div class="registro caja-registro">
-        <div class="registro-header">Registrar una Cuenta
-          <a class="btnCerrar icon-close" href="index.html">X</a>
-        </div>
-        <div class="registro-body">
-          <form>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <label for="exampleInputName">Nombres</label>
-                  <input class="form-control" id="txtNombres" type="text" placeholder="Ingrese sus nombres" required="">
-                </div>
-                <div class="col-md-6">
-                  <label for="exampleInputLastName">Apellidos</label>
-                  <input class="form-control" id="txtApellidos" type="text" placeholder="Ingrese sus apellidos"
-                    required="">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Dirección e-mail</label>
-              <input class="form-control" id="txtEmail" type="email" placeholder="Ingresar email" required="">
-            </div>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <label for="exampleInputPassword1">Contraseña</label>
-                  <input class="form-control" id="txtCoPassword" type="password" placeholder="Contraseña" required="">
-                </div>
-                <div class="col-md-6">
-                  <label for="exampleConfirmPassword">Confirmar contraseña</label>
-                  <input class="form-control" id="txtCoPassword" type="password" placeholder="Confirmar contraseña"
-                    required="">
-                </div>
-              </div>
-            </div>
-            <input type="submit" name="" class="btn btn-dark btn-block" value="Registrar">
-          </form>
-          <div class="text-center acceso">
-            <a class="small btnVlogueo" href="#home">Página de Logueo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="principal">
+		<div class="container">
+		    <div class="login caja-login">
+		      	<div class="login-header">
+		      		Login
+		      		<a class="btnCerrar icon-close" href="index.php"></a>
+		  		</div>
+			    <div class="login-body">
+			        <form method="post" action="dll/login.php">
+			          <div class="form-group">
+			            <label for="label_email">Usuario</label>
+			            <input class="form-control" name="txtEmail" type="email" placeholder="Enter email" required>
+			          </div>
+			          <div class="form-group">
+			            <label for="label_contraseña">Password</label>
+			            <input class="form-control" name="txtContraseña" type="password" placeholder="Password" required>
+			          </div>
+			          <div class="form-group">
+			            <div class="form-check">
+			              <label class="form-check-label">
+			                <input class="form-check-input" type="checkbox"> Recordar contraseña</label>
+			            </div>
+			          </div>
+			         	<button class="btn btn-primary btn-block" type="submit">Login</button>
+			        </form>
+			        <div class="text-center acceso">
+			          <a class="small btnRegistrar" href="#home">Registrarse ahora</a>
+			          <a class="small" href="">Olvidaste tu contraseña?</a>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<div class="principal2">
+		 <div class="container">
+		    <div class="registro caja-registro">
+		      <div class="registro-header">Registrar una Cuenta
+		      	<a class="btnCerrar icon-close" href="index.php"></a>
+		      </div>
+		      <div class="registro-body">
+		        <form method="post" action="dll/registro.php">
+		          <div class="form-group">
+		            <div class="form-row">
+		              <div class="col-md-6">
+		                <label for="exampleInputName">Nombres</label>
+		                <input class="form-control" name="txtNombre" type="text" placeholder="Ingrese sus nombres" required="">
+		              </div>
+		              <div class="col-md-6">
+		                <label for="exampleInputLastName">Apellidos</label>
+		                <input class="form-control" name="txtApellido" type="text" placeholder="Ingrese sus apellidos" required="">
+		              </div>
+		            </div>
+		            <div class="form-group">
+		            	<div class="form-row">
+				            <div class="col-md-6">
+				               <label for="exampleInputCedula">Cedula</label>
+				               <input class="form-control" name="txtCedula" type="text" placeholder="Ingrese su cedula" required="">
+				            </div>
+				            <div class="col-md-6">
+				               <label for="exampleInputNacimiento">Fecha de Nacimiento</label>
+				               <input class="form-control" name="txtNacimiento" type="date" placeholder="Ingrese su cedula" required="">
+				            </div>
+			            </div>
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label for="exampleInputEmail1">Dirección e-mail</label>
+		            <input class="form-control" name="txtCorreo" type="email" placeholder="Ingresar email" required="">
+		          </div>
+		          <div class="form-group">
+		            <div class="form-row">
+		              <div class="col-md-6">
+		                <label for="exampleInputPassword1">Contraseña</label>
+		                <input class="form-control" name="txtPassword" type="password" placeholder="Contraseña" required="">
+		              </div>
+		              <div class="col-md-6">
+		                <label for="exampleConfirmPassword">Confirmar contraseña</label>
+		                <input class="form-control" name="txtCoPassword" type="password" placeholder="Confirmar contraseña" required="">
+		              </div>
+		            </div>
+		          </div>
+		          <input type="submit" name="registrar" class="btn btn-primary btn-block" value="Registrar">
+		        </form>
+		        <div class="text-center acceso">
+		          <a class="small btnVlogueo" href="#home">Página de Logueo</a>
+		          <a class="small" href="forgot-password.html">Olvidaste tu contraseña?</a>
+		        </div>
+		      </div>
+		    </div>
+  		</div>
+  	</div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
       <div class="container">
