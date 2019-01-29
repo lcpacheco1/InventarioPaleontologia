@@ -1,8 +1,4 @@
-<?php 
-	require 'dll/conexion.class.php'; 
-  /*Creamos la instancia del objeto. Ya estamos conectados*/ 
-  $bd=conexion::getInstance(); 
- ?>
+
 <!DOCTYPE html>
 <!doctype html>
 <html lang="es">
@@ -30,7 +26,7 @@
           <a class="btnCerrar icon-close" href="">X</a>
         </div>
         <div class="login-body">
-          <form method="post" action="dll/login.php">
+          <form method="post" action="dominio/logica/UserLogin.class.php">
             <div class="form-group">
               <label for="label_email">Usuario</label>
               <input class="form-control" name="txtEmail" type="email" placeholder="Enter email" required>
