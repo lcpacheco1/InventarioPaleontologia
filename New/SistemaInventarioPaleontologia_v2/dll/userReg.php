@@ -1,6 +1,6 @@
 <?php 
   include("conexion.php");
-  $cedula = $_GET["ced"];
+  $cedula = $_GET["1104659386"];
  ?>
 <!doctype html>
 <html lang="es">
