@@ -1,0 +1,14 @@
+SMAP
+AdminReg_jsp.java
+JSP
+*S JSP
+*F
++ 0 AdminReg.jsp
+Templates/internas/AdminReg.jsp
+*L
+5,49:45
+54,5:95
+58,6:100
+64,2:107
+65,266:109
+*E
